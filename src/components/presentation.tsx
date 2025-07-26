@@ -10,7 +10,7 @@ export function Presentation() {
     age: '22 years old',
     location: 'Astana, Kazakhstan',
     description: `Salut 👋\nI'm Aibar — Data Scientist & ML Engineer deep into LLMs, RAG pipelines, and GenAI systems.\nI work at EPAM, co-run a startup, and love building AI tools that actually ship.\nAlways hungry for tough problems, fast feedback, and spicy prompts.`,
-    src: '/profil-raph.png', // Replace with your memoji image path
+    src: '/aibar.jpg', // Replace with your memoji image path
     fallbackSrc:
       'https://iili.io/FvB0Ddv.jpg',
   };
