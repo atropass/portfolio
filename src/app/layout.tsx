@@ -7,46 +7,58 @@ import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
 // Load Inter font for non-Apple devices
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Toukoum Portfolio",
+  title: "Aibar Berekeyev Portfolio",
   description: "Interactive portfolio with an AI-powered Memoji that answers questions about me, my skills, and my experience",
   keywords: [
-    "Toukoum", 
-    "Portfolio", 
-    "Developer", 
-    "AI", 
-    "Interactive", 
-    "Memoji", 
+    "Aibar Berekeyev",
+    "Portfolio",
+    "Data Scientist",
+    "AI",
+    "Interactive",
+    "Memoji",
+    "Machine Learning",
+    "Data Science",
+    "AI",
+    "Interactive",
+    "Memoji",
     "Web Development",
     "Full Stack",
     "Next.js",
-    "React"
+    "React",
+    "Kazakhstan",
+    "Astana",
+    "Almaty",
+    "Nur-Sultan",
+    "Kazakhstan",
+    "Astana",
+    "Almaty",
   ],
   authors: [
     {
-      name: "Toukoum",
-      url: "https://toukoum.fr",
+      name: "Aibar Berekeyev",
+      url: "https://aibar.me",
     },
   ],
-  creator: "Toukoum",
+  creator: "Aibar Berekeyev",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://toukoum.fr",
-    title: "Toukoum Portfolio",
+    url: "https://aibar.me",
+    title: "Aibar Berekeyev Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    siteName: "Toukoum Portfolio",
+    siteName: "Aibar Berekeyev Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Toukoum Portfolio",
+    title: "Aibar Berekeyev Portfolio",
     description: "Interactive portfolio with an AI-powered Memoji that answers questions about me",
-    creator: "@toukoum",
+    creator: "@atropass",
   },
   icons: {
     icon: [

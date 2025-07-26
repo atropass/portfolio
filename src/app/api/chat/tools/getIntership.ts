@@ -3,25 +3,25 @@ import { z } from 'zod';
 
 export const getInternship = tool({
   description:
-    "Gives a summary of what kind of internship I'm looking for, plus my contact info and how to reach me. Use this tool when the user asks about my internship search or how to contact me for opportunities.",
+    "Gives a summary of what kind of internship or opportunity I'm open to, plus contact info. Use this when someone asks about my internship experience or how to reach me for offers.",
   parameters: z.object({}),
   execute: async () => {
-    return `Here’s what I’m looking for 👇
+    return `Here’s the deal 👇
 
-- 📅 **Duration**: 6-month internship starting **September 2025**
-- 🌍 **Location**: Preferably **San Francisco** or anywhere in the **United States**
-- 🧑‍💻 **Focus**: AI development, full-stack web apps, SaaS, agentic workflows
-- 🛠️ **Stack**: Python, React/Next.js, Tailwind CSS, TypeScript, GPT, RAG, etc.
-- 💼 **Visa**: I’m based in Paris 🇫🇷 so I might need **J-1 sponsorship**
-- ✅ **What I bring**: Real experience with secure on-prem GPTs (Lighton), deepsearch engines, custom RAG tools, and hackathon wins like **ETH Oxford** & **Paris Blockchain Week**
-- 🔥 I move fast, learn faster, and I’m HUNGRYYYYY for big challenges
+- 📅 **Availability**: Open to short-term consulting, research collabs, or 3–6 month internships starting **Fall 2025**
+- 🌍 **Location**: Remote-first or on-site in **Europe**, **US** (*with J-1 sponsorship*), or **Asia** if it's spicy enough 🇰🇿
+- 💡 **Focus**: AI/LLM infrastructure, agentic pipelines, custom RAG systems, or anything GenAI with real-world mess
+- 🧠 **Interests**: long-context modeling, hybrid retrieval, metadata games, tool use, orchestration, and AI-native SaaS
+- 💼 **Stack**: Python, LangChain, LangGraph, Qdrant, FastAPI, Next.js, Hugging Face, Docker, GitLab CI/CD, you name it
+- 🎯 **What I bring**: Production LLM apps, mentoring, shipped bots, custom protocols, infra thinking, and **speed**
+- 🥷 Not just “curious about AI” — I build it, test it, break it, fix it. No fluffy BS.
 
-📬 **Contact me** via:
-- Email: raphaelgiraud12@gmail.com
-- LinkedIn: [linkedin.com/in/raphael-giraud](https://www.linkedin.com/in/raphael-giraud-ai/)
-- GitHub: [github.com/raphaelgiraud](https://github.com/toukoum)
+📬 Wanna build cool shit or need GenAI help?
 
-Let's build cool shit together ✌️
-    `;
+- Email: aibar.berekeyev@gmail.com  
+- LinkedIn: [linkedin.com/in/aibarberekeyev-794250250](https://www.linkedin.com/in/aibarberekeyev-794250250)  
+- GitHub: [github.com/atropass](https://github.com/atropass)
+
+Ping me if your stack is chaotic and your problem’s juicy. Otherwise… good luck 🤞`;
   },
 });

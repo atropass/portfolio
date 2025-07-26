@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 const InternshipCard = () => {
   const openMail = () => {
-    window.open('mailto:raphaelgiraud12@gmail.com', '_blank');
+    window.open('mailto:aibar.berekeyev@gmail.com', '_blank');
   };
   const router = useRouter();
 
@@ -24,13 +24,13 @@ const InternshipCard = () => {
           <div className="bg-muted h-16 w-16 overflow-hidden rounded-full shadow-md">
             <img
               src="/avatar-raphael.jpg"
-              alt="Raphael's avatar"
+              alt="Aibar's avatar"
               className="h-full w-full object-cover"
             />
           </div>
           <div>
             <h2 className="text-foreground text-2xl font-semibold">
-              Raphael Giraud
+              Aibar Berekeyev
             </h2>
             <p className="text-muted-foreground text-sm">
               Intership Application

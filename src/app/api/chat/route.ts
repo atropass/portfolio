@@ -1,8 +1,7 @@
-import { openai } from '@ai-sdk/openai';
+import { google } from '@ai-sdk/google';
 import { streamText } from 'ai';
 import { SYSTEM_PROMPT } from './prompt';
 import { getContact } from './tools/getContact';
-import { getCrazy } from './tools/getCrazy';
 import { getInternship } from './tools/getIntership';
 import { getPresentation } from './tools/getPresentation';
 import { getProjects } from './tools/getProjects';
@@ -40,12 +39,11 @@ export async function POST(req: Request) {
       getContact,
       getSkills,
       getSports,
-      getCrazy,
       getInternship,
     };
 
     const result = streamText({
-      model: openai('gpt-4o-mini'),
+      model: google('models/gemini-2.5-flash'),
       messages,
       toolCallStreaming: true,
       tools,
