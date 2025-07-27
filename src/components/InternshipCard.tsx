@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { CalendarDays, Code2, Globe } from 'lucide-react';
+import { BriefcaseBusiness, Code2, Globe } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 const InternshipCard = () => {
@@ -23,7 +23,7 @@ const InternshipCard = () => {
           {/* Avatar placeholder */}
           <div className="bg-muted h-16 w-16 overflow-hidden rounded-full shadow-md">
             <img
-              src="/avatar-raphael.jpg"
+              src="/aibar.jpg"
               alt="Aibar's avatar"
               className="h-full w-full object-cover"
             />
@@ -33,7 +33,7 @@ const InternshipCard = () => {
               Aibar Berekeyev
             </h2>
             <p className="text-muted-foreground text-sm">
-              Intership Application
+              New Grad Application
             </p>
           </div>
         </div>
@@ -53,11 +53,11 @@ const InternshipCard = () => {
       {/* Internship Info */}
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="flex items-start gap-3">
-          <CalendarDays className="mt-1 h-5 w-5 text-blue-500" />
+          <BriefcaseBusiness className="mt-1 h-5 w-5 text-blue-500" />
           <div>
-            <p className="text-foreground text-sm font-medium">Duration</p>
+            <p className="text-foreground text-sm font-medium">Position</p>
             <p className="text-muted-foreground text-sm">
-              6 months – starting September 2025 (fall 2025)
+              New Grad (Full-time) with relocation support
             </p>
           </div>
         </div>
@@ -66,7 +66,7 @@ const InternshipCard = () => {
           <div>
             <p className="text-foreground text-sm font-medium">Location</p>
             <p className="text-muted-foreground text-sm">
-              Preferably San Francisco 🇺🇸
+              Open to roles in the USA or Europe
             </p>
           </div>
         </div>
@@ -78,16 +78,31 @@ const InternshipCard = () => {
             <p className="text-foreground text-sm font-medium">Tech stack</p>
             <div className="text-muted-foreground grid grid-cols-1 gap-y-1 text-sm sm:grid-cols-2">
               <ul className="decoration-none list-disc pl-4">
-                <li>Python, Next.js, TypeScript, Tailwind CSS</li>
-                <li>Vercel AI SDK, Supabase, Prisma</li>
-                <li>OpenAI, Mistral, Claude, Whisper</li>
-                <li>Prompt engineering, fine-tuning</li>
+                <li>
+                  Programming & Databases: Python, SQL (PostgreSQL), JavaScript, HTML/CSS, MongoDB
+                </li>
+                <li>
+                  Cloud & DevOps: GCP, AWS, Docker, Kubernetes, GitLab CI/CD, Argo Workflows, Helm
+                </li>
+                <li>
+                  AI/ML & NLP: PyTorch, TensorFlow, LangChain, LlamaIndex, LangGraph, RAG, Hybrid Search (BM25),
+                  HuggingFace, Sentence Transformers, OpenCV
+                </li>
+                <li>
+                  LLMs & VLMs: OpenAI (GPT-4, GPT-4o), Anthropic (Claude 3.5), Google (Gemini), E5-Large, MxBai, GTE-Large,
+                  ColPali, Qwen
+                </li>
+                <li>
+                  Vector Databases: Qdrant, Redis, ChromaDB, Zilliz
+                </li>
+                <li>
+                  Frameworks & Tools:FastAPI, Next.js, Git, Pydantic, Ruff, Pyright, Uvicorn
+                </li>
               </ul>
               <ul className="list-disc pl-4">
-                <li>Weaviate, Pinecone, vector DBs</li>
-                <li>Hugging Face Transformers</li>
-                <li>Tool routing, calling, RAG</li>
-                <li>Hackathons + AI agent workflows</li>
+                <li>
+                  Skills: Agentic Workflow, Model Context Protocol, Function Calling, Prompt Engineering, LLM Fine-tuning
+                </li>
                 <li>
                   <a
                     href="/chat?query=What%20are%20your%20skills%3F%20Give%20me%20a%20list%20of%20your%20soft%20and%20hard%20skills."
@@ -108,10 +123,9 @@ const InternshipCard = () => {
           What I bring
         </p>
         <p className="text-foreground text-sm">
-          Real-world AI dev experience from Lighton (MCP, secure GPTs, RAG
-          pipelines). <br /> 3x hackathon wins (ETH Oxford, Paris Blockchain
-          Week, Colosseum Breakout on Solana). <br /> I ship fast, and love
-          building useful things that actually work.
+          Experienced in building practical AI applications, including RAG
+          pipelines and secure large language model integrations. <br /> I have
+          a passion for shipping high-quality, functional products efficiently.
         </p>
       </div>
 
@@ -119,9 +133,9 @@ const InternshipCard = () => {
       <div className="mt-8">
         <p className="text-foreground mb-2 text-lg font-semibold">Goal</p>
         <p className="text-foreground text-sm">
-          Join a bold, innovative team building AI-powered tools that matter. I
-          want to improve fast, contribute hard, and leave a mark. I’m fast,
-          flexible, and HUNGRYYYYY 🔥
+          Seeking a challenging New Grad role where I can apply my skills in ML/DL
+          and full-stack development to contribute to meaningful projects and
+          grow within a forward-thinking company.
         </p>
       </div>
 
