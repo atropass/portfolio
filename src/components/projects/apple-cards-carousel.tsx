@@ -27,7 +27,7 @@ export const CarouselContext = createContext<{
   onCardClose: (index: number) => void;
   currentIndex: number;
 }>({
-  onCardClose: () => {},
+  onCardClose: () => { },
   currentIndex: 0,
 });
 
@@ -289,11 +289,12 @@ export const Card = ({
           </motion.p>
         </div>
         <BlurImage
-          src={card.src}
+          src={card.src || '/syntopreview.png'} // Fallback to placeholder
           alt={card.title}
           fill
           className="absolute inset-0 z-10 object-cover"
         />
+        
       </motion.button>
     </>
   );

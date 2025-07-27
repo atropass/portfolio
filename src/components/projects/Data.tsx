@@ -7,21 +7,27 @@ import { url } from 'inspector';
 // Enhanced project content array with all projects
 const PROJECT_CONTENT = [
   {
-    title: 'ColPali Vector Search',
-    description: 'Production-ready vector search engine with advanced hybrid retrieval (BM25 + dense). Outperformed baseline RAG with +42.57% NDCG@5. Fully containerized & deployed in production.',
-    techStack: ['Python', 'LangChain', 'FastAPI', 'Qdrant', 'Docker', 'GitLab CI/CD'],
-    date: '2024',
-    links: [],
-    images: [
-      {
-        src: '/colpali1.png',
-        alt: 'Query result with source attribution',
-      },
-      {
-        src: '/colpali2.png',
-        alt: 'Pipeline architecture',
-      },
+    title: 'Duken.ai',
+    description:
+      'Co-founded an AI-native SaaS platform for e-commerce, acquiring and retaining 37+ active, paying customers by achieving product-market fit. Engineered the core AI feature for automated ad targeting, which increased customer conversion rates by an average of 33% and became a key driver for user acquisition. ',
+    techStack: [
+      'Python',
+      'FastAPI',
+      'Golang',
+      'Docker',
+      'CI/CD',
+      'Redis',
+      'gRPC',
+      'Jenkins',
+      'Next.js',
+      'PostgreSQL',
+      'Docker',
+      'GCP',
+
     ],
+    date: '2023 - Present',
+    links: [{ name: 'Website', url: 'https://www.dukenapp.kz/' }],
+    images: [],
   },
 ];
 
@@ -44,23 +50,42 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
   }
 
   return (
-    <div>
-      {/* Images gallery */}
-      {projectData.images && projectData.images.length > 0 && (
-        <div className="space-y-6">
-          <div className="grid grid-cols-1 gap-4">
-            {projectData.images.map((image, index) => (
-              <div
-                key={index}
-                className="relative aspect-video overflow-hidden rounded-2xl"
+    <div className="text-neutral-700 dark:text-neutral-200">
+      <p className="mb-6 text-sm md:text-base">
+        {projectData.description}
+      </p>
+
+      {projectData.techStack && (
+        <div className="mb-6">
+          <h3 className="mb-2 text-lg font-semibold">Tech Stack</h3>
+          <div className="flex flex-wrap gap-2">
+            {projectData.techStack.map((tech) => (
+              <span
+                key={tech}
+                className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-neutral-800 dark:text-neutral-300"
               >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover transition-transform"
-                />
-              </div>
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {projectData.links && projectData.links.length > 0 && (
+        <div className="mb-6">
+          <h3 className="mb-2 text-lg font-semibold">Links</h3>
+          <div className="flex flex-wrap gap-4">
+            {projectData.links.map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-200 dark:bg-neutral-800 dark:text-neutral-300 dark:hover:bg-neutral-700"
+              >
+                <Link className="h-4 w-4" />
+                {link.name}
+              </a>
             ))}
           </div>
         </div>
@@ -73,56 +98,8 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
 export const data = [
   {
     category: 'Startup Project',
-    title: 'Synto',
-    src: '/syntopreview.png',
-    content: <ProjectContent project={{ title: 'Synto' }} />,
-  },
-  {
-    category: 'Fun Tool',
-    title: 'Rrate',
-    src: '/ratepreview.png',
-    content: <ProjectContent project={{ title: 'Rrate' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Defai',
-    src: '/defaipreview.png',
-    content: <ProjectContent project={{ title: 'Defai' }} />,
-  },
-  {
-    category: 'Hackathon Winner',
-    title: 'Fitgear',
-    src: '/fitgearpreview.png',
-    content: <ProjectContent project={{ title: 'Fitgear' }} />,
-  },
-  {
-    category: 'Business Intelligence',
-    title: 'Datai',
-    src: '/dataipreview.png',
-    content: <ProjectContent project={{ title: 'Datai' }} />,
-  },
-  {
-    category: '42 Project',
-    title: '3d Pong Game',
-    src: '/transcendancepreview.png',
-    content: <ProjectContent project={{ title: '3d Pong Game' }} />,
-  },
-  {
-    category: '42 Project',
-    title: 'Minishell',
-    src: '/minishellpreview.png',
-    content: <ProjectContent project={{ title: 'Minishell' }} />,
-  },
-  {
-    category: 'Automation',
-    title: 'YouBot',
-    src: '/youbotpreview.png',
-    content: <ProjectContent project={{ title: 'YouBot' }} />,
-  },
-  {
-    category: 'Web Development',
-    title: 'Old Portfolio',
-    src: '/oldportfoliopreview.png',
-    content: <ProjectContent project={{ title: 'Old Portfolio' }} />,
+    title: 'Duken.ai',
+    src: '/syntopreview.png', // Placeholder image
+    content: <ProjectContent project={{ title: 'Duken.ai' }} />,
   },
 ];
