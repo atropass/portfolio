@@ -8,7 +8,7 @@ export const getInternship = tool({
   execute: async () => {
     return `Here’s the deal 👇
 
-- 📅 **Availability**: Open to short-term consulting, research collabs, or 3–6 month internships starting **Fall 2025**
+- 📅 **Availability**: Open to New Grad positions.
 - 🌍 **Location**: Remote-first or on-site in **Europe**, **US** (*with J-1 sponsorship*), or **Asia** if it's spicy enough 🇰🇿
 - 💡 **Focus**: AI/LLM infrastructure, agentic pipelines, custom RAG systems, or anything GenAI with real-world mess
 - 🧠 **Interests**: long-context modeling, hybrid retrieval, metadata games, tool use, orchestration, and AI-native SaaS
